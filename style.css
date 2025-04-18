@@ -1,0 +1,115 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+form {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.inp__box {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        width: 200px;
+        height: 32px;
+        margin-top: 4px;
+        padding: 5px;
+
+        border: 1.5px solid #b2b2b2;
+        border-radius: 4px;
+    }
+
+    .add_btn {
+        margin-top: 19px;
+        height: 32px;
+        border: none;
+        background-color: blue;
+        color: white;
+        padding: 0 12px;
+        border-radius: 5px;
+    }
+}
+
+table {
+    margin-top: 40px;
+    width: 65%;
+    border-collapse: collapse;
+}
+
+th {
+    color: #a8a8a8;
+}
+
+th,
+td {
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+
+    button {
+        padding: 4px;
+        border: none;
+        background-color: black;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+  
+.modal-content {
+    background: white;
+    padding: 20px 24px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 300px;
+}
+  
+.modal-content input {
+    height: 32px;
+    padding: 5px;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+}
+  
+.modal-content button {
+    height: 36px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+  
